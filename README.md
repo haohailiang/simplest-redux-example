@@ -1,6 +1,6 @@
 # 最简单的redux
 
-## 流程自诉
+## 流程自述
 1. 当点击button按钮触发onClick事件  
 2. onClick事件执行 { onIncreaseClick } 这个句柄  
 3. onIncreaseClick这个句柄 派发事件给 increaseAction 这个Action  
