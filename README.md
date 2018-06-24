@@ -1,4 +1,13 @@
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
+# 最简单的redux
+
+## 流程自诉
+1. 当点击button按钮触发onClick事件  
+2. onClick事件执行 { onIncreaseClick } 这个句柄  
+3. onIncreaseClick这个句柄 派发事件给 increaseAction 这个Action  
+4. 在Provider中的store装有监听器Reducer-counter  
+5. counter根据action更新状态返回  
+6. state状态更新反映到映射的属性value上  
+7. value取到值进行显示  
 
 For beginners like me to learn the concepts in [Redux](https://github.com/reactjs/redux)
 
