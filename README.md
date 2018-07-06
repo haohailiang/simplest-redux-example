@@ -8,6 +8,7 @@
 5. counter根据action更新状态返回  
 6. state状态更新反映到映射的属性value上  
 7. value取到值进行显示  
+8. 执行顺序是:action -> store -> view -> action -> store -> view -> action -> ...
 ## 我喜欢的一些文档
 http://cn.redux.js.org/  
 https://github.com/happypoulp/redux-tutorial  [TODO示例编写]
