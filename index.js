@@ -37,6 +37,7 @@ function counter(state = { count: 0 }, action) {
 }
 
 // Store
+// createStore 函数必须接收一个能够修改应用状态的函数
 const store = createStore(counter)
 
 // 把state映射成组件的prop

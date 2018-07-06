@@ -1,5 +1,8 @@
 # 最简单的redux
-
+## redux的作用
+1. 存放应用程序状态的容器
+2. 一种把 action 分发到状态修改器的机制，也就是 reducer 函数
+3. 监听状态变化的机制
 ## 流程自述
 1. 当点击button按钮触发onClick事件  
 2. onClick事件执行 { onIncreaseClick } 这个句柄  
@@ -9,6 +12,9 @@
 6. state状态更新反映到映射的属性value上  
 7. value取到值进行显示  
 8. 执行顺序是:action -> store -> view -> action -> store -> view -> action -> ...
+9. 执行顺序是:ActionCreator -> Action -> dispatcher -> reducer
+## Store的作用
+包含了所有的监听函数producer
 ## 我喜欢的一些文档
 http://cn.redux.js.org/  
 https://github.com/happypoulp/redux-tutorial  [TODO示例编写]
