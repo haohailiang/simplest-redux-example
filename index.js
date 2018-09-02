@@ -8,12 +8,18 @@ import { Provider, connect } from 'react-redux'
 class Counter extends Component {
   render() {
     const { value, onIncreaseClick } = this.props
+
     return (
       <div>
         <span>{value}</span>
         <button onClick={onIncreaseClick}>Increase</button>
+        <button onClick={this.onIncreaseClick2.bind(this)}>Increase2</button>
       </div>
     )
+  }
+
+  onIncreaseClick2() {
+	  console.log( "haha" );
   }
 }
 
@@ -47,12 +53,15 @@ function mapStateToProps(state) {
   }
 }
 
+// 绑定属性 value 到 Counter 组件 关联关系 redux state.count
+
 // 把action映射成组件的属性
 function mapDispatchToProps(dispatch) {
   return {
     onIncreaseClick: () => dispatch(increaseAction)
   }
 }
+// 绑定属性 onIncreaseClick 到 Counter 组件 关联关系 派发 reducer increaseAction action
 
 // Connected Component
 const App = connect(
